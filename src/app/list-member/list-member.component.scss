@@ -1,0 +1,31 @@
+a.btn-link{
+  text-decoration: none;
+  color: darkcyan;
+}
+
+table {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+td,
+th {
+  width: 20%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 20%;
+  padding: 20px;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}

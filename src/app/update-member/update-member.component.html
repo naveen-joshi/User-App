@@ -1,0 +1,73 @@
+<div class="row">
+  <div class="offset-2 col-8">
+    <div class="card shadow-sm rounded">
+      <div class="card-body" *ngIf="member">
+        <h4 class="card-title text-center">Update Details for ID: {{ id }}</h4>
+        <form (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col">
+              <label for="status" class="form-label">Status</label>
+              <input
+                type="text"
+                name="status"
+                [(ngModel)]="member.status"
+                class="form-control"
+                id="status"
+                [(ngModel)]="member.status"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                class="form-control"
+                id="firstName"
+                [(ngModel)]="member.firstName"
+              />
+            </div>
+            <div class="col">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                class="form-control"
+                id="lastName"
+                [(ngModel)]="member.lastName"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="jobTitle" class="form-label">Job Title</label>
+              <input
+                type="text"
+                name="jobTitle"
+                class="form-control"
+                id="jobTitle"
+                [(ngModel)]="member.jobTitle"
+              />
+            </div>
+            <div class="col">
+              <label for="team" class="form-label">Team</label>
+              <input
+                type="text"
+                class="form-control"
+                id="team"
+                name="team"
+                [(ngModel)]="member.team"
+              />
+            </div>
+          </div>
+          <div class="d-grid col-6 mx-auto mt-2">
+            <button class="btn btn-outline-primary" type="submit">
+              Update Member
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

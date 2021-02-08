@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="offset-3 col-6">
+    <div class="card rounded shadow-sm">
+      <div class="card-header">
+        <h4 class="card-title text-center">Member Details</h4>
+      </div>
+      <div class="card-body" *ngIf="member">
+        <div class="row row-cols-2">
+          <div class="col">Id</div>
+          <div class="col">{{ member.id }}</div>
+          <div class="col">First Name</div>
+          <div class="col">{{ member.firstName }}</div>
+          <div class="col">Last Name</div>
+          <div class="col">{{ member.lastName }}</div>
+          <div class="col">Job Title</div>
+          <div class="col">{{ member.jobTitle }}</div>
+          <div class="col">Team</div>
+          <div class="col">{{ member.team }}</div>
+          <div class="col">Status</div>
+          <div class="col">{{ member.status }}</div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="d-grid col-6 mx-auto mt-2">
+          <button class="btn btn-outline-primary" (click)="listMembers()">
+            Go to Home
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
